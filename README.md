@@ -1,16 +1,111 @@
-# React + Vite
+# MartelDev - E-commerce Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Template profesional para tiendas online optimizado para emprendedores que venden por TikTok, Instagram y WhatsApp.
 
-Currently, two official plugins are available:
+## 🚀 Stack Tecnológico
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **React**: 18.3.1
+- **Estilos**: [Tailwind CSS 3.4](https://tailwindcss.com/)
+- **Fuente**: Google Fonts (Manrope)
+- **Iconos**: Material Symbols Outlined
 
-## React Compiler
+## 📦 Instalación
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+```bash
+# Instalar dependencias
+npm install
 
-## Expanding the ESLint configuration
+# Iniciar servidor de desarrollo
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Construir para producción
+npm run build
+
+# Iniciar servidor de producción
+npm start
+```
+
+## 🌐 URLs
+
+- **Desarrollo**: http://localhost:3000
+- **Producción**: Deploy en Vercel, Netlify o tu hosting preferido
+
+## ✨ Características
+
+### Diseño Moderno
+- ✅ Hero section con gradientes y animaciones
+- ✅ Sección de beneficios con 6 tarjetas interactivas
+- ✅ Demo section con preview animado
+- ✅ Precios con 3 planes detallados
+- ✅ Testimonios con ratings de estrellas
+- ✅ CTA impactante con gradientes
+- ✅ Footer completo con 3 columnas
+
+### Funcionalidades
+- 🌓 Dark mode con persistencia
+- 📱 100% responsive
+- ⚡ Optimización automática de Next.js
+- 🎨 Animaciones suaves con Tailwind
+- 🔍 SEO optimizado
+
+## 📁 Estructura del Proyecto
+
+```
+web-ecommerce/
+├── app/
+│   ├── components/        # Componentes React
+│   ├── hooks/            # Hooks personalizados
+│   ├── globals.css       # Estilos globales
+│   ├── layout.jsx        # Layout principal
+│   └── page.jsx          # Página de inicio
+├── public/               # Archivos estáticos
+├── tailwind.config.js    # Configuración de Tailwind
+├── next.config.js        # Configuración de Next.js
+└── package.json          # Dependencias
+```
+
+## 🚢 Deploy
+
+### Vercel (Recomendado)
+1. Push tu código a GitHub
+2. Importa el proyecto en [Vercel](https://vercel.com)
+3. Deploy automático
+
+### Otros Hosting
+```bash
+npm run build
+npm start
+```
+
+## 📝 Personalización
+
+### Colores
+Edita `tailwind.config.js` para cambiar los colores de marca:
+```javascript
+colors: {
+  primary: '#ff007a',
+  secondary: '#34d399',
+  // ...
+}
+```
+
+### Contenido
+Los componentes principales están en `app/components/MartelDev.jsx`
+
+### Metadata SEO
+Edita `app/layout.jsx` para cambiar título, descripción y keywords
+
+## 📚 Documentación
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS](https://tailwindcss.com/docs)
+- [MIGRATION.md](./MIGRATION.md) - Detalles de la migración de Vite a Next.js
+
+## 📄 Licencia
+
+Este proyecto es privado y está destinado para uso comercial.
+
+---
+
+**Desarrollado con ❤️ para emprendedores digitales**
