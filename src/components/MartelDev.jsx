@@ -79,14 +79,27 @@ const MartelDev = () => {
         <main className='flex flex-1 justify-center py-5 sm:px-10'>
           <div className='layout-content-container'>
             {/* Hero Section */}
-            <section className='py-10 sm:py-20 px-4'>
-              <div className='flex flex-col-reverse gap-10 md:flex-row md:items-center'>
+            <section className='relative py-10 sm:py-20 px-4'>
+              {/* Fondo de imagen para toda la sección */}
+              <div
+                className='absolute inset-0 bg-cover bg-center bg-no-repeat'
+                style={{
+                  backgroundImage:
+                    'url("https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")'
+                }}
+              >
+                {/* Overlay para mejor legibilidad */}
+                <div className='absolute inset-0 bg-black/20 dark:bg-black/40'></div>
+              </div>
+
+              {/* Contenido existente con fondo semitransparente */}
+              <div className='relative z-10 flex flex-col-reverse gap-10 md:flex-row md:items-center max-w-6xl mx-auto'>
                 <div className='flex flex-col gap-6 md:gap-8 md:w-1/2'>
                   <div className='flex flex-col gap-4 text-left'>
-                    <h1 className='text-4xl font-black leading-tight tracking-tight sm:text-5xl'>
+                    <h1 className='text-4xl font-black leading-tight tracking-tight sm:text-5xl text-white'>
                       Lanza tu tienda online profesional en minutos.
                     </h1>
-                    <h2 className='text-base font-normal leading-normal sm:text-lg text-subtext-light dark:text-subtext-dark transition-colors duration-300'>
+                    <h2 className='text-base font-normal leading-normal sm:text-lg text-white/90'>
                       Usa el template e-commerce de MartelDev, optimizado para
                       emprendedores que venden por TikTok.
                     </h2>
@@ -95,7 +108,7 @@ const MartelDev = () => {
                     <button className='flex w-full sm:w-auto min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-6 bg-secondary text-white text-lg font-bold leading-normal tracking-[0.015em] hover:bg-secondary-hover transition-colors shadow-lg shadow-secondary/30'>
                       <span className='truncate'>💻 Ver demo del template</span>
                     </button>
-                    <button className='flex w-full sm:w-auto min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary/10 text-primary text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/20 transition-colors'>
+                    <button className='flex w-full sm:w-auto min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-white/20 text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-white/30 transition-colors backdrop-blur-sm'>
                       <span className='truncate'>
                         🧩 Quiero una tienda personalizada
                       </span>
@@ -104,41 +117,41 @@ const MartelDev = () => {
                 </div>
 
                 <div className='w-full md:w-1/2'>
-                  <div className='relative w-full aspect-video flex items-center justify-center bg-card-light dark:bg-card-dark/50 rounded-xl overflow-hidden p-4 transition-colors duration-300'>
-                    <div className='absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10'></div>
-                    <div className='relative z-10 w-full h-full border-2 border-border-light dark:border-border-dark rounded-lg bg-background-light/50 dark:bg-background-dark/50 shadow-2xl backdrop-blur-sm flex flex-col p-4 transition-colors duration-300'>
-                      <div className='flex items-center gap-2 pb-2 border-b border-border-light dark:border-border-dark transition-colors duration-300'>
+                  <div className='relative w-full aspect-video flex items-center justify-center rounded-xl overflow-hidden p-4'>
+                    <div className='absolute inset-0 bg-white/10 dark:bg-black/20 backdrop-blur-md rounded-xl'></div>
+                    <div className='relative z-10 w-full h-full border-2 border-white/20 rounded-lg bg-white/10 dark:bg-black/20 shadow-2xl backdrop-blur-sm flex flex-col p-4'>
+                      <div className='flex items-center gap-2 pb-2 border-b border-white/20'>
                         <div className='w-3 h-3 rounded-full bg-red-400'></div>
                         <div className='w-3 h-3 rounded-full bg-yellow-400'></div>
                         <div className='w-3 h-3 rounded-full bg-green-400'></div>
                       </div>
                       <div className='flex-1 flex items-center justify-center gap-4 sm:gap-6 pt-4'>
                         <div className='flex flex-col items-center gap-3 opacity-0 animate-slide-up-1'>
-                          <div className='flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-secondary/10 text-secondary rounded-lg text-3xl sm:text-4xl shadow-md animate-float-1 transition-colors duration-300'>
+                          <div className='flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-white/20 text-white rounded-lg text-3xl sm:text-4xl shadow-md animate-float-1'>
                             <span className='material-symbols-outlined text-3xl sm:text-4xl'>
                               palette
                             </span>
                           </div>
-                          <div className='w-16 h-2 bg-slate-200 dark:bg-slate-700 rounded-full transition-colors duration-300'></div>
-                          <div className='w-10 h-2 bg-slate-200 dark:bg-slate-700 rounded-full transition-colors duration-300'></div>
+                          <div className='w-16 h-2 bg-white/30 rounded-full'></div>
+                          <div className='w-10 h-2 bg-white/30 rounded-full'></div>
                         </div>
                         <div className='flex flex-col items-center gap-3 opacity-0 animate-slide-up-2'>
-                          <div className='flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-primary/10 text-primary rounded-lg text-3xl sm:text-4xl shadow-md animate-float-2 transition-colors duration-300'>
+                          <div className='flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-white/20 text-white rounded-lg text-3xl sm:text-4xl shadow-md animate-float-2'>
                             <span className='material-symbols-outlined text-3xl sm:text-4xl'>
                               shopping_cart
                             </span>
                           </div>
-                          <div className='w-16 h-2 bg-slate-200 dark:bg-slate-700 rounded-full transition-colors duration-300'></div>
-                          <div className='w-10 h-2 bg-slate-200 dark:bg-slate-700 rounded-full transition-colors duration-300'></div>
+                          <div className='w-16 h-2 bg-white/30 rounded-full'></div>
+                          <div className='w-10 h-2 bg-white/30 rounded-full'></div>
                         </div>
                         <div className='flex flex-col items-center gap-3 opacity-0 animate-slide-up-3'>
-                          <div className='flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-yellow-500/10 text-yellow-500 rounded-lg text-3xl sm:text-4xl shadow-md animate-float-3 transition-colors duration-300'>
+                          <div className='flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-white/20 text-white rounded-lg text-3xl sm:text-4xl shadow-md animate-float-3'>
                             <span className='material-symbols-outlined text-3xl sm:text-4xl'>
                               rocket_launch
                             </span>
                           </div>
-                          <div className='w-16 h-2 bg-slate-200 dark:bg-slate-700 rounded-full transition-colors duration-300'></div>
-                          <div className='w-10 h-2 bg-slate-200 dark:bg-slate-700 rounded-full transition-colors duration-300'></div>
+                          <div className='w-16 h-2 bg-white/30 rounded-full'></div>
+                          <div className='w-10 h-2 bg-white/30 rounded-full'></div>
                         </div>
                       </div>
                       <div className='absolute bottom-4 right-4 flex items-center justify-center w-12 h-12 bg-secondary rounded-full shadow-lg opacity-0 animate-pop-in'>
@@ -172,7 +185,7 @@ const BeneficiosSection = () => {
   const beneficios = [
     { icon: 'link', title: 'Integración con TikTok, Instagram y WhatsApp' },
     { icon: 'bolt', title: 'Carga rápida y optimizada para móviles' },
-    { icon: 'palette', title: 'Personalización sencilla sin código' },
+    // { icon: 'palette', title: 'Personalización sencilla sin código' },
     {
       icon: 'space_dashboard',
       title: 'Panel intuitivo para gestionar tus productos'
