@@ -1,7 +1,30 @@
+'use client'
+
+import { useState, useEffect } from 'react'
 import { useDarkMode } from '../hooks/useDarkMode'
 
 const DarkModeToggle = () => {
   const [isDark, toggleDarkMode] = useDarkMode()
+  const [mounted, setMounted] = useState(false)
+
+  // Evitar error de hidratación
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  // Mostrar un placeholder mientras se monta el componente
+  if (!mounted) {
+    return (
+      <button
+        className='flex items-center justify-center w-10 h-10 rounded-lg hover:bg-primary/10 transition-colors duration-200'
+        aria-label='Toggle theme'
+      >
+        <span className='material-symbols-outlined text-gray-600 text-xl'>
+          contrast
+        </span>
+      </button>
+    )
+  }
 
   return (
     <button
