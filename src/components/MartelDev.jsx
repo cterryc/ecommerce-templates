@@ -82,13 +82,17 @@ const MartelDev = () => {
             <section className='py-10 sm:py-20 px-4 relative'>
               {/* Gradient background */}
               <div className='absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 rounded-3xl'></div>
-              
+
               <div className='flex flex-col-reverse gap-10 md:flex-row md:items-center relative z-10'>
                 <div className='flex flex-col gap-6 md:gap-8 md:w-1/2'>
                   {/* Badge */}
                   <div className='inline-flex items-center gap-2 self-start bg-gradient-to-r from-primary/10 to-secondary/10 px-4 py-2 rounded-full border border-primary/20'>
-                    <span className='text-xs font-bold text-primary'>🚀 NUEVO</span>
-                    <span className='text-xs text-subtext-light dark:text-subtext-dark'>Optimizado para TikTok Shop</span>
+                    <span className='text-xs font-bold text-primary'>
+                      🚀 NUEVO
+                    </span>
+                    <span className='text-xs text-subtext-light dark:text-subtext-dark'>
+                      Optimizado para TikTok Shop
+                    </span>
                   </div>
 
                   <div className='flex flex-col gap-4 text-left'>
@@ -104,7 +108,9 @@ const MartelDev = () => {
                   <div className='flex flex-col sm:flex-row gap-3'>
                     <button className='group flex w-full sm:w-auto min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 bg-gradient-to-r from-secondary to-secondary-hover text-white text-base font-bold leading-normal tracking-[0.015em] hover:shadow-xl hover:shadow-secondary/30 hover:scale-105 transition-all duration-300'>
                       <span className='truncate'>💻 Ver demo del template</span>
-                      <span className='material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform'>arrow_forward</span>
+                      <span className='material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform'>
+                        arrow_forward
+                      </span>
                     </button>
                     <button className='group flex w-full sm:w-auto min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 bg-primary/10 text-primary text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/20 hover:shadow-lg border-2 border-primary/20 hover:border-primary/40 transition-all duration-300'>
                       <span className='truncate'>🧩 Tienda personalizada</span>
@@ -114,18 +120,30 @@ const MartelDev = () => {
                   {/* Stats */}
                   <div className='flex items-center gap-6 pt-4'>
                     <div className='flex flex-col'>
-                      <span className='text-2xl font-bold text-primary'>100+</span>
-                      <span className='text-xs text-subtext-light dark:text-subtext-dark'>Tiendas creadas</span>
+                      <span className='text-2xl font-bold text-primary'>
+                        100+
+                      </span>
+                      <span className='text-xs text-subtext-light dark:text-subtext-dark'>
+                        Tiendas creadas
+                      </span>
                     </div>
                     <div className='w-px h-10 bg-border-light dark:bg-border-dark'></div>
                     <div className='flex flex-col'>
-                      <span className='text-2xl font-bold text-secondary'>4.9/5</span>
-                      <span className='text-xs text-subtext-light dark:text-subtext-dark'>Satisfacción</span>
+                      <span className='text-2xl font-bold text-secondary'>
+                        4.9/5
+                      </span>
+                      <span className='text-xs text-subtext-light dark:text-subtext-dark'>
+                        Satisfacción
+                      </span>
                     </div>
                     <div className='w-px h-10 bg-border-light dark:bg-border-dark'></div>
                     <div className='flex flex-col'>
-                      <span className='text-2xl font-bold text-yellow-500'>24h</span>
-                      <span className='text-xs text-subtext-light dark:text-subtext-dark'>Entrega rápida</span>
+                      <span className='text-2xl font-bold text-yellow-500'>
+                        24h
+                      </span>
+                      <span className='text-xs text-subtext-light dark:text-subtext-dark'>
+                        Entrega rápida
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -135,7 +153,7 @@ const MartelDev = () => {
                     <div className='absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10'></div>
                     <div className='absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl'></div>
                     <div className='absolute bottom-0 left-0 w-32 h-32 bg-secondary/20 rounded-full blur-3xl'></div>
-                    
+
                     <div className='relative z-10 w-full h-full border-2 border-border-light dark:border-border-dark rounded-xl bg-background-light/80 dark:bg-background-dark/80 shadow-2xl backdrop-blur-sm flex flex-col p-4 transition-colors duration-300'>
                       <div className='flex items-center gap-2 pb-2 border-b border-border-light dark:border-border-dark transition-colors duration-300'>
                         <div className='w-3 h-3 rounded-full bg-red-400 hover:bg-red-500 transition-colors cursor-pointer'></div>
@@ -204,20 +222,21 @@ const MartelDev = () => {
 
 const BeneficiosSection = () => {
   const beneficios = [
-    { 
-      icon: 'link', 
+    {
+      icon: 'link',
       title: 'Integración con TikTok, Instagram y WhatsApp',
-      description: 'Conecta tus redes sociales y WhatsApp Business en un solo lugar',
+      description:
+        'Conecta tus redes sociales y WhatsApp Business en un solo lugar',
       gradient: 'from-pink-500/10 to-purple-500/10'
     },
-    { 
-      icon: 'bolt', 
+    {
+      icon: 'bolt',
       title: 'Carga rápida y optimizada para móviles',
       description: 'Velocidad de carga < 2 segundos para mejor conversión',
       gradient: 'from-yellow-500/10 to-orange-500/10'
     },
-    { 
-      icon: 'palette', 
+    {
+      icon: 'palette',
       title: 'Personalización sencilla sin código',
       description: 'Cambia colores, fuentes y diseño sin tocar código',
       gradient: 'from-blue-500/10 to-cyan-500/10'
@@ -248,7 +267,9 @@ const BeneficiosSection = () => {
       id='beneficios'
     >
       <div className='flex flex-col gap-4 max-w-3xl'>
-        <span className='text-sm font-bold text-primary uppercase tracking-wider'>¿Por qué elegirnos?</span>
+        <span className='text-sm font-bold text-primary uppercase tracking-wider'>
+          ¿Por qué elegirnos?
+        </span>
         <h2 className='text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl'>
           Diseñado para convertir seguidores en clientes.
         </h2>
@@ -262,7 +283,9 @@ const BeneficiosSection = () => {
             key={index}
             className='group flex gap-4 rounded-2xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 flex-col transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:scale-105 hover:-translate-y-1 cursor-pointer'
           >
-            <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${beneficio.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+            <div
+              className={`w-12 h-12 rounded-xl bg-gradient-to-br ${beneficio.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
+            >
               <span className='material-symbols-outlined text-primary text-2xl'>
                 {beneficio.icon}
               </span>
@@ -286,7 +309,9 @@ const DemoSection = () => (
   <section className='flex flex-col gap-10 px-4 py-10 sm:py-20'>
     <div className='flex flex-col gap-6 items-center text-center'>
       <div className='flex flex-col gap-4 max-w-3xl'>
-        <span className='text-sm font-bold text-secondary uppercase tracking-wider'>Demo en vivo</span>
+        <span className='text-sm font-bold text-secondary uppercase tracking-wider'>
+          Demo en vivo
+        </span>
         <h2 className='text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl'>
           Mira cómo luce tu próxima tienda.
         </h2>
@@ -297,27 +322,35 @@ const DemoSection = () => (
       </div>
       <button className='group flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 bg-gradient-to-r from-primary to-primary-hover text-white text-base font-bold leading-normal tracking-[0.015em] hover:shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300'>
         <span className='truncate'>Probar demo</span>
-        <span className='material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform'>arrow_forward</span>
+        <span className='material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform'>
+          arrow_forward
+        </span>
       </button>
     </div>
     <div className='relative w-full bg-center bg-no-repeat aspect-video bg-cover rounded-2xl overflow-hidden group cursor-pointer shadow-2xl border border-border-light dark:border-border-dark'>
       <div className='absolute inset-0 bg-gradient-to-br from-primary/20 via-gray-200 dark:via-gray-700 to-secondary/20 transition-colors duration-300'></div>
-      
+
       {/* Play button overlay */}
       <div className='absolute inset-0 flex items-center justify-center'>
         <div className='w-20 h-20 rounded-full bg-white/90 dark:bg-gray-800/90 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-2xl'>
-          <span className='material-symbols-outlined text-primary text-5xl ml-1'>play_arrow</span>
+          <span className='material-symbols-outlined text-primary text-5xl ml-1'>
+            play_arrow
+          </span>
         </div>
       </div>
 
       {/* Grid overlay for tech feel */}
       <div className='absolute inset-0 opacity-10'>
-        <div className='w-full h-full' style={{
-          backgroundImage: 'linear-gradient(rgba(255,0,122,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,0,122,0.3) 1px, transparent 1px)',
-          backgroundSize: '50px 50px'
-        }}></div>
+        <div
+          className='w-full h-full'
+          style={{
+            backgroundImage:
+              'linear-gradient(rgba(255,0,122,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,0,122,0.3) 1px, transparent 1px)',
+            backgroundSize: '50px 50px'
+          }}
+        ></div>
       </div>
-      
+
       <span className='absolute bottom-4 left-1/2 -translate-x-1/2 text-sm font-bold text-text-light dark:text-text-dark bg-white/80 dark:bg-gray-800/80 px-4 py-2 rounded-full backdrop-blur-sm transition-colors duration-300'>
         🎬 Preview de la tienda demo
       </span>
@@ -376,7 +409,9 @@ const PreciosSection = () => {
   return (
     <section className='flex flex-col gap-10 px-4 py-10 sm:py-20' id='precios'>
       <div className='text-center'>
-        <span className='text-sm font-bold text-primary uppercase tracking-wider'>Precios transparentes</span>
+        <span className='text-sm font-bold text-primary uppercase tracking-wider'>
+          Precios transparentes
+        </span>
         <h2 className='text-3xl font-bold leading-tight tracking-tight mt-4 sm:text-4xl lg:text-5xl'>
           Elige el plan que mejor se adapte a ti.
         </h2>
@@ -408,10 +443,16 @@ const PreciosSection = () => {
               </p>
             </div>
             <div className='flex items-baseline gap-2'>
-              <span className='text-4xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>{plan.price}</span>
-              {plan.price !== 'A medida' && <span className='text-sm text-subtext-light dark:text-subtext-dark'>USD</span>}
+              <span className='text-4xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>
+                {plan.price}
+              </span>
+              {plan.price !== 'A medida' && (
+                <span className='text-sm text-subtext-light dark:text-subtext-dark'>
+                  USD
+                </span>
+              )}
             </div>
-            
+
             <div className='flex flex-col gap-3 py-4'>
               {plan.features.map((feature, i) => (
                 <div key={i} className='flex items-start gap-2'>
@@ -428,24 +469,32 @@ const PreciosSection = () => {
               } text-sm font-bold transition-all duration-300 hover:scale-105`}
             >
               <span>{plan.buttonText}</span>
-              <span className='material-symbols-outlined ml-2 group-hover/btn:translate-x-1 transition-transform text-lg'>arrow_forward</span>
+              <span className='material-symbols-outlined ml-2 group-hover/btn:translate-x-1 transition-transform text-lg'>
+                arrow_forward
+              </span>
             </button>
           </div>
         ))}
       </div>
-      
+
       {/* Trust badges */}
       <div className='flex flex-wrap items-center justify-center gap-8 pt-10 opacity-60'>
         <div className='flex items-center gap-2'>
-          <span className='material-symbols-outlined text-secondary'>verified</span>
+          <span className='material-symbols-outlined text-secondary'>
+            verified
+          </span>
           <span className='text-sm font-medium'>Pago seguro</span>
         </div>
         <div className='flex items-center gap-2'>
-          <span className='material-symbols-outlined text-secondary'>support_agent</span>
+          <span className='material-symbols-outlined text-secondary'>
+            support_agent
+          </span>
           <span className='text-sm font-medium'>Soporte 24/7</span>
         </div>
         <div className='flex items-center gap-2'>
-          <span className='material-symbols-outlined text-secondary'>update</span>
+          <span className='material-symbols-outlined text-secondary'>
+            update
+          </span>
           <span className='text-sm font-medium'>Actualizaciones gratis</span>
         </div>
       </div>
@@ -484,12 +533,15 @@ const TestimoniosSection = () => {
       id='testimonios'
     >
       <div className='flex flex-col gap-4 max-w-3xl mx-auto text-center'>
-        <span className='text-sm font-bold text-primary uppercase tracking-wider'>Testimonios</span>
+        <span className='text-sm font-bold text-primary uppercase tracking-wider'>
+          Testimonios
+        </span>
         <h2 className='text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl'>
           Emprendedores que ya confiaron en MartelDev
         </h2>
         <p className='text-lg text-subtext-light dark:text-subtext-dark'>
-          Únete a más de 100 negocios que ya están vendiendo con nuestras soluciones
+          Únete a más de 100 negocios que ya están vendiendo con nuestras
+          soluciones
         </p>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
@@ -500,14 +552,16 @@ const TestimoniosSection = () => {
           >
             <div className='flex gap-1'>
               {[...Array(testimonio.rating)].map((_, i) => (
-                <span key={i} className='text-yellow-400'>⭐</span>
+                <span key={i} className='text-yellow-400'>
+                  ⭐
+                </span>
               ))}
             </div>
-            
+
             <p className='text-base leading-relaxed italic text-text-light dark:text-text-dark'>
               {testimonio.quote}
             </p>
-            
+
             <div className='flex items-center gap-4 mt-auto pt-4 border-t border-border-light dark:border-border-dark'>
               <div className='w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform'>
                 <span className='text-white text-lg font-bold'>
@@ -515,7 +569,9 @@ const TestimoniosSection = () => {
                 </span>
               </div>
               <div>
-                <p className='font-bold text-text-light dark:text-text-dark'>{testimonio.name}</p>
+                <p className='font-bold text-text-light dark:text-text-dark'>
+                  {testimonio.name}
+                </p>
                 <p className='text-sm text-subtext-light dark:text-subtext-dark'>
                   {testimonio.role}
                 </p>
@@ -524,26 +580,36 @@ const TestimoniosSection = () => {
           </div>
         ))}
       </div>
-      
+
       <div className='flex flex-col items-center gap-6 pt-10'>
         <div className='flex items-center gap-2 text-subtext-light dark:text-subtext-dark'>
-          <span className='material-symbols-outlined text-secondary'>verified</span>
-          <span className='text-sm font-medium'>Verificado por Google Reviews</span>
+          <span className='material-symbols-outlined text-secondary'>
+            verified
+          </span>
+          <span className='text-sm font-medium'>
+            Verificado por Google Reviews
+          </span>
         </div>
         <div className='flex flex-wrap items-center justify-center gap-8'>
           <div className='text-center'>
             <div className='text-3xl font-bold text-primary'>4.9/5</div>
-            <div className='text-xs text-subtext-light dark:text-subtext-dark'>Rating promedio</div>
+            <div className='text-xs text-subtext-light dark:text-subtext-dark'>
+              Rating promedio
+            </div>
           </div>
           <div className='w-px h-12 bg-border-light dark:bg-border-dark'></div>
           <div className='text-center'>
             <div className='text-3xl font-bold text-secondary'>100+</div>
-            <div className='text-xs text-subtext-light dark:text-subtext-dark'>Clientes felices</div>
+            <div className='text-xs text-subtext-light dark:text-subtext-dark'>
+              Clientes felices
+            </div>
           </div>
           <div className='w-px h-12 bg-border-light dark:bg-border-dark'></div>
           <div className='text-center'>
             <div className='text-3xl font-bold text-yellow-500'>98%</div>
-            <div className='text-xs text-subtext-light dark:text-subtext-dark'>Recomendación</div>
+            <div className='text-xs text-subtext-light dark:text-subtext-dark'>
+              Recomendación
+            </div>
           </div>
         </div>
       </div>
@@ -558,43 +624,52 @@ const CTASection = () => (
   >
     {/* Background pattern */}
     <div className='absolute inset-0 opacity-10'>
-      <div className='w-full h-full' style={{
-        backgroundImage: 'linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)',
-        backgroundSize: '50px 50px'
-      }}></div>
+      <div
+        className='w-full h-full'
+        style={{
+          backgroundImage:
+            'linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)',
+          backgroundSize: '50px 50px'
+        }}
+      ></div>
     </div>
-    
+
     {/* Decorative blobs */}
     <div className='absolute top-0 left-0 w-64 h-64 bg-secondary/30 rounded-full blur-3xl'></div>
     <div className='absolute bottom-0 right-0 w-64 h-64 bg-white/20 rounded-full blur-3xl'></div>
-    
+
     <div className='relative z-10 flex flex-col gap-8 items-center'>
       <div className='inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full backdrop-blur-sm'>
         <span className='text-xs font-bold'>🚀 LANZA TU TIENDA HOY</span>
       </div>
-      
+
       <h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight max-w-3xl'>
         Convierte tus seguidores en clientes reales.
       </h2>
-      
+
       <p className='max-w-2xl text-lg text-white/90 leading-relaxed'>
-        Empieza hoy con MartelDev y crea una tienda que venda por ti. Sin complicaciones técnicas, sin costos ocultos.
+        Empieza hoy con MartelDev y crea una tienda que venda por ti. Sin
+        complicaciones técnicas, sin costos ocultos.
       </p>
-      
+
       <div className='flex flex-col sm:flex-row gap-4'>
         <button className='group flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 bg-white text-primary text-base font-bold hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-xl'>
           <span className='truncate'>💼 Comprar template</span>
-          <span className='material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform'>arrow_forward</span>
+          <span className='material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform'>
+            arrow_forward
+          </span>
         </button>
         <button className='group flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 border-2 border-white text-white text-base font-bold hover:bg-white/10 transition-all duration-300 hover:scale-105'>
           <span className='truncate'>💬 Hablar por WhatsApp</span>
         </button>
       </div>
-      
+
       {/* Trust indicators */}
       <div className='flex flex-wrap items-center justify-center gap-6 pt-4 text-sm text-white/80'>
         <div className='flex items-center gap-2'>
-          <span className='material-symbols-outlined text-lg'>check_circle</span>
+          <span className='material-symbols-outlined text-lg'>
+            check_circle
+          </span>
           <span>Entrega inmediata</span>
         </div>
         <div className='flex items-center gap-2'>
@@ -619,7 +694,11 @@ const Footer = () => (
         <div className='flex flex-col gap-4'>
           <div className='flex items-center gap-3'>
             <div className='size-8 text-primary'>
-              <svg fill='none' viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'>
+              <svg
+                fill='none'
+                viewBox='0 0 48 48'
+                xmlns='http://www.w3.org/2000/svg'
+              >
                 <g clipPath='url(#clip0_6_330)'>
                   <path
                     clipRule='evenodd'
@@ -638,61 +717,107 @@ const Footer = () => (
             <span className='text-xl font-bold'>MartelDev</span>
           </div>
           <p className='text-sm text-subtext-light dark:text-subtext-dark leading-relaxed'>
-            Templates profesionales para emprendedores que quieren vender más por redes sociales.
+            Templates profesionales para emprendedores que quieren vender más
+            por redes sociales.
           </p>
           {/* Social links */}
           <div className='flex items-center gap-3'>
-            <a href='#' className='w-10 h-10 rounded-lg bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors'>
+            <a
+              href='#'
+              className='w-10 h-10 rounded-lg bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors'
+            >
               <span className='text-primary font-bold'>f</span>
             </a>
-            <a href='#' className='w-10 h-10 rounded-lg bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors'>
+            <a
+              href='#'
+              className='w-10 h-10 rounded-lg bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors'
+            >
               <span className='text-primary font-bold'>in</span>
             </a>
-            <a href='#' className='w-10 h-10 rounded-lg bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors'>
+            <a
+              href='#'
+              className='w-10 h-10 rounded-lg bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors'
+            >
               <span className='text-primary font-bold'>ig</span>
             </a>
           </div>
         </div>
-        
+
         {/* Quick links */}
         <div className='flex flex-col gap-4'>
-          <h3 className='font-bold text-text-light dark:text-text-dark'>Enlaces rápidos</h3>
+          <h3 className='font-bold text-text-light dark:text-text-dark'>
+            Enlaces rápidos
+          </h3>
           <nav className='flex flex-col gap-2'>
-            <a href='#beneficios' className='text-sm text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors'>Beneficios</a>
-            <a href='#precios' className='text-sm text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors'>Precios</a>
-            <a href='#testimonios' className='text-sm text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors'>Testimonios</a>
-            <a href='#contacto' className='text-sm text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors'>Contacto</a>
+            <a
+              href='#beneficios'
+              className='text-sm text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors'
+            >
+              Beneficios
+            </a>
+            <a
+              href='#precios'
+              className='text-sm text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors'
+            >
+              Precios
+            </a>
+            <a
+              href='#testimonios'
+              className='text-sm text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors'
+            >
+              Testimonios
+            </a>
+            <a
+              href='#contacto'
+              className='text-sm text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors'
+            >
+              Contacto
+            </a>
           </nav>
         </div>
-        
+
         {/* Contact info */}
         <div className='flex flex-col gap-4'>
-          <h3 className='font-bold text-text-light dark:text-text-dark'>Contacto</h3>
+          <h3 className='font-bold text-text-light dark:text-text-dark'>
+            Contacto
+          </h3>
           <div className='flex flex-col gap-3'>
-            <a href='mailto:contacto@marteldev.com' className='flex items-center gap-2 text-sm text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors'>
+            <a
+              href='mailto:contacto@marteldev.com'
+              className='flex items-center gap-2 text-sm text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors'
+            >
               <span className='material-symbols-outlined text-lg'>mail</span>
               contacto@marteldev.com
             </a>
-            <a href='#' className='flex items-center gap-2 text-sm text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors'>
+            <a
+              href='#'
+              className='flex items-center gap-2 text-sm text-subtext-light dark:text-subtext-dark hover:text-primary transition-colors'
+            >
               <span className='material-symbols-outlined text-lg'>phone</span>
               +51 999 999 999
             </a>
             <div className='flex items-center gap-2 text-sm text-subtext-light dark:text-subtext-dark'>
-              <span className='material-symbols-outlined text-lg'>schedule</span>
+              <span className='material-symbols-outlined text-lg'>
+                schedule
+              </span>
               Lun - Vie: 9am - 6pm
             </div>
           </div>
         </div>
       </div>
-      
+
       {/* Bottom bar */}
       <div className='pt-6 border-t border-border-light dark:border-border-dark flex flex-col sm:flex-row items-center justify-between gap-4'>
         <p className='text-sm text-subtext-light dark:text-subtext-dark'>
           © 2025 MartelDev. Todos los derechos reservados.
         </p>
         <div className='flex items-center gap-6 text-sm text-subtext-light dark:text-subtext-dark'>
-          <a href='#' className='hover:text-primary transition-colors'>Política de Privacidad</a>
-          <a href='#' className='hover:text-primary transition-colors'>Términos de Servicio</a>
+          <a href='#' className='hover:text-primary transition-colors'>
+            Política de Privacidad
+          </a>
+          <a href='#' className='hover:text-primary transition-colors'>
+            Términos de Servicio
+          </a>
         </div>
       </div>
     </div>
